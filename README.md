@@ -11,7 +11,7 @@ GAS should be running and the GIP should be setup.
 
 You must have created the 'service to service app' in the consoleApp as per the manual page.
 
-https://github.com/neilm-fourjs/garDeploy.git
+Search GAS manual for 'automatize deployment'
 
 Update the values at the top of the script
 ```
