@@ -1,5 +1,5 @@
-# garDeploy.sh  -  deploy a GAR to GAS via the deployment web service
-
+# garDeploy.sh
+deploy a GAR to GAS via the deployment web service
 
 ## Requirements:
 
@@ -10,6 +10,7 @@ FGL 3.20 >
 GAS should be running and the GIP should be setup.
 
 You must have created the 'service to service app' in the consoleApp as per the manual page.
+
 https://github.com/neilm-fourjs/garDeploy.git
 
 Update the values at the top of the script
