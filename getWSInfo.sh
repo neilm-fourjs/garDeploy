@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Your Configuration Information
-GASURL=https://<YOUR SERVER>/<GAS ALIAS>/ws/r
+GASURL=https://<YOUR SERVER>/<GAS ALIAS>
 CLIENTID=<YOUR SERVICE TO SERVICE APP CLIENTID>
 SECRETID=<YOUR SERVICE TO SERVICE APP SECRETID>
 XCF=<THE NAME OF YOUR XCF FILE excluding the .xcf>
@@ -11,9 +11,9 @@ WSSCOPE="<YOUR SCOPES>"
 # Static variables
 FILE=$SRV.tok
 GETTOKEN=$FGLDIR/web_utilities/services/gip/bin/gettoken/GetToken.42r
-IDP=$GASURL/services/GeneroIdentityProvider
-OPENIDCFG=$GASURL/services/GeneroIdentityProvider/.well-known/openid-configuration
-APIJSON=$GASURL/$XCF/$SRV?openapi.json
+IDP=$GASURL/ws/r/services/GeneroIdentityProvider
+OPENIDCFG=$GASURL/ws/r/services/GeneroIdentityProvider/.well-known/openid-configuration
+APIJSON=$GASURL/ws/r/$XCF/$SRV?openapi.json
 
 # Get a token if we don't have a recent one.
 if [ "$(find $FILE -mmin +9)" ] || [ ! -e $FILE ]; then

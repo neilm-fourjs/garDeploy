@@ -30,7 +30,7 @@ SECURE= #< 1 or 0 - to secure the service behind GIP >
 
 Update the values at the top of the getWSInfo.sh script.
 ```
-GASURL=https://<YOUR SERVER>/<GAS ALIAS>/ws/r
+GASURL=https://<YOUR SERVER>/<GAS ALIAS>
 CLIENTID=<YOUR SERVICE TO SERVICE APP CLIENTID>
 SECRETID=<YOUR SERVICE TO SERVICE APP SECRETID>
 XCF=<THE NAME OF YOUR XCF FILE excluding the .xcf>
