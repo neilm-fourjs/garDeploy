@@ -9,7 +9,8 @@ FGL 3.20 >
 
 GAS should be running and the GIP should be setup.
 
-You must have created the 'service to service app' in the consoleApp as per the manual page.
+You must create the 'service to service app' in the consoleApp and give it the scopes of: deployment register
+This will show you the ClientID and SecretID you need.
 
 Search GAS manual for 'automatize deployment'
 
