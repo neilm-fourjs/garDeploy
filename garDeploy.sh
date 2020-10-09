@@ -12,7 +12,7 @@ SECURE= #< 1 or 0 - to secure the service behind GIP >
 GETTOKEN=$FGLDIR/web_utilities/services/gip/bin/gettoken/GetToken.42r
 DEPLOYGAR=$FGLDIR/web_utilities/services/gip/bin/deploy/DeployGar.42r
 FILE=./deploy.tok
-WSSCOPE="deployment registar"
+WSSCOPE="deployment register"
 GARFILE=distbin/${GARNAME}.gar
 LOG=garDeploy.log
 unset FGLPROFILE
