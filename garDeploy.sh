@@ -66,6 +66,8 @@ if [ $? -eq 0 ]; then
 	fglrun $DEPLOYGAR undeploy -f $FILE $GARNAME $GASURL >> $LOG
 fi
 
+rm deployed.list
+
 # Deploy / Secure / Enable
 echo "Deploy $GARNAME ..."
 fglrun $DEPLOYGAR deploy -f $FILE $GARFILE $GASURL >> $LOG
