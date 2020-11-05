@@ -1,6 +1,8 @@
 # garDeploy.sh & getWSInfo.sh
 
-garDeploy.sh: deploy a GAR to GAS via the deployment web service
+garDeploy.sh: deploy a GAR to GAS via the secure deployment web service
+
+gbcDeploy.sh: deploy a GBC to GAS via the secure deployment web service
 
 getWSInfo.sh: get the GIP endpoints and the openapi json for your service
 
@@ -34,6 +36,17 @@ GARNAME= #< your gar file name - without the .gar >
 GASURL= #< your url for the gas, ie: https://<server>[:port]/[cgi alias]  >
 SECURE= #< 1 or 0 - to secure the service behind GIP >
 ```
+
+
+Update the values at the top of the gbcDeploy.sh script to your values.
+```
+SETUP=0 # IMPORTANT: change this to 1 when you have updated the values below!
+CLIENTID= #< your client id >
+SECRETID= #< your secret id >
+GBCNAME= #< your gbc file name - without the .zip >
+GASURL= #< your url for the gas, ie: https://<server>[:port]/[cgi alias]  >
+```
+
 
 Update the values at the top of the getWSInfo.sh script.
 ```
