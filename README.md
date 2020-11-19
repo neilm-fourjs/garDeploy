@@ -10,6 +10,7 @@
 
 ## Genero example program
 
+* Deploy.sh: a simple script to run the program in the directory where it's installed.
 * Deploy.4gl: An Genero example program for deploying a gar or gbc file
 * gar_api.4gl: Generated from openapi for the service
 * gbc_api.4gl: Generated from openapi for the service
@@ -84,6 +85,6 @@ or
 ```
 It's possible run this from a custom action in GeneroStudio, you can create this from the Preferences->General->User Actions
 ![gstcustacc](https://github.com/neilm-fourjs/garDeploy/raw/master/gst_custom_action.png "GSTCUSTACC")
-
+In the example above I'm using pi.json server config file to deploy to my Raspberry Pi.
 
 
