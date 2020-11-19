@@ -1,7 +1,7 @@
 
 # Various GAR and GBC deployment automation examples
 
-## garDeploy.sh & getWSInfo.sh
+## Scripts
 
 * garDeploy.sh: deploy a GAR to GAS via the secure deployment web service
 * gbcDeploy.sh: deploy a GBC to GAS via the secure deployment web service
@@ -75,11 +75,11 @@ $ make
 ```
 
 To deploy a gar or gbc to a server you need to define the properties for the server in a json file, see the example.json supplied, then run the program like this:
-
+```
 fglrun Deploy.42r gar myapp.gar local.json
-
+```
 or
-
+```
 fglrun Deploy.42r gbc mygbc.zip local.json
-
+```
 
