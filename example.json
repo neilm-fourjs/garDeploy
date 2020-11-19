@@ -1,0 +1,8 @@
+{
+  "name": "example",
+  "url": "https://myserver.test/gas",
+  "cli_id": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+  "secret": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "scopes": "deployment register",
+  "connTimeout": 5
+}

@@ -50,14 +50,14 @@ fi
 
 # Get list of deployed gar's - mainly to check our access is working.
 echo "Getting deployed list / checking access ..."
-fglrun $DEPLOYGAR list --xml --tokenfile $FILE $GASURL > deployed.list
+fglrun $DEPLOYGAR list --xml --tokenfile $FILE $GASURL > deployed_gar.list
 if [ $? -ne 0 ]; then
 	echo "Failed to get deployed list!"
 	exit 1
 fi
 
 # Check if already deployed and try and undeploy it.
-deployed=$( grep ARCHIVE deployed.list | grep $GARNAME >> $LOG )
+deployed=$( grep ARCHIVE deployed_gar.list | grep $GARNAME >> $LOG )
 if [ $? -eq 0 ]; then
 	echo "Gar already deployed, attempting to disable and undeploy ..."
 	echo "Disable $GARNAME ..."
@@ -98,6 +98,10 @@ else
 	echo "Okay"
 fi
 
-fglrun $DEPLOYGAR list --xml --tokenfile $FILE $GARURL | grep ARCHIVE | grep $GARNAME
+echo "Getting deployed list"
+fglrun $DEPLOYGAR list --xml --tokenfile $FILE $GASURL > deployed_gar.list
+grep ARCHIVE deployed_gar.list
+
+#fglrun $DEPLOYGAR config -f $FILE -c ${GARNAME}.json get $APPCLIENTID $GASURL/
 echo "Finished."
 
