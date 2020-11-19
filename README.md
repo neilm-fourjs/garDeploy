@@ -76,10 +76,14 @@ $ make
 
 To deploy a gar or gbc to a server you need to define the properties for the server in a json file, see the example.json supplied, then run the program like this:
 ```
-fglrun Deploy.42r gar myapp.gar local.json
+<install folder>/Deploy.sh gar myapp.gar local.json
 ```
 or
 ```
-fglrun Deploy.42r gbc mygbc.zip local.json
+<install folder>/Deploy.sh gbc mygbc.zip local.json
 ```
+It's possible run this from a custom action in GeneroStudio, you can create this from the Preferences->General->User Actions
+![gstcustacc](https://github.com/neilm-fourjs/garDeploy/raw/master/gst_custom_action.png "GSTCUSTACC")
+
+
 
